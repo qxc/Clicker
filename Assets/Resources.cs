@@ -2,13 +2,15 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class Resources : MonoBehaviour {
+public class Resources {
 
     public Text textGold;
     public Text textTime;
 
     public Resources()
     {
+		textGold = GameObject.Find ("CurrentGold").GetComponent<Text>();
+		textTime = GameObject.Find ("CurrentTime").GetComponent<Text>();
 
     }
 

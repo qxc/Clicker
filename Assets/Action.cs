@@ -12,6 +12,7 @@ public class Action {
         //cost[1] = two;
         cost = cost_;
         reward = reward_;
+		Debug.Log ("Instantiating an action!");
     }
 
     public string toStringCost()
